@@ -215,7 +215,7 @@ public class AllInOneActivity extends AbstractCalendarActivity implements EventH
             options.putBoolean("allowSkip", true);
 
             AccountManager am = AccountManager.get(AllInOneActivity.this);
-            am.addAccount("com.google", CalendarContract.AUTHORITY, null, options,
+            am.addAccount("com", CalendarContract.AUTHORITY, null, options,
                     AllInOneActivity.this,
                     new AccountManagerCallback<Bundle>() {
                         @Override
